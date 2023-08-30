@@ -7,7 +7,11 @@
     "description": "{{description}}",
     "i18n": {
       "bundleName": "sap.fe.cap.travel_analytics.i18n.i18n",
-      "supportedLocales": ["en", "de", "fr"],
+      "supportedLocales": [
+        "en",
+        "de",
+        "fr"
+      ],
       "fallbackLocale": "en"
     },
     "applicationVersion": {
@@ -61,6 +65,9 @@
     }
   },
   "sap.ui5": {
+    "resourceRoots": {
+      "cc.spreadsheetimporter.v0_24_0": "./thirdparty/customControl/spreadsheetImporter/v0_24_0"
+    },
     "flexEnabled": true,
     "dependencies": {
       "minUI5Version": "1.108.10",
@@ -80,7 +87,11 @@
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
           "bundleName": "sap.fe.cap.travel_analytics.i18n.i18n",
-          "supportedLocales": ["en", "de", "fr"],
+          "supportedLocales": [
+            "en",
+            "de",
+            "fr"
+          ],
           "fallbackLocale": "en"
         }
       },

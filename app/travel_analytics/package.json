@@ -9,7 +9,7 @@
     "npm": ">=8"
   },
   "scripts": {
-    "build": "ui5 build preload --clean-dest --include-task=generateCachebusterInfo",
+    "build": "ui5 build preload --all --clean-dest --include-task=generateCachebusterInfo",
     "start": "ui5 serve",
     "test": "npm run test:node && npm run test:java",
     "test:java": "karma start --server=java --single-run",
@@ -28,5 +28,8 @@
     "puppeteer": "^21.0.1",
     "ui5-middleware-simpleproxy": "^3.0.0",
     "ui5-task-zipper": "^3.0.0"
+  },
+  "dependencies": {
+    "ui5-cc-spreadsheetimporter": "^0.24.0"
   }
 }
