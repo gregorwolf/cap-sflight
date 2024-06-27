@@ -44,6 +44,17 @@
           "title": "Process Travels",
           "subTitle": "Process travels",
           "icon": "sap-icon://flight"
+        },
+        "travel-manage": {
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          },
+          "semanticObject": "travel",
+          "action": "manage",
+          "title": "Manage Travels",
+          "subTitle": "Manage travels",
+          "icon": "sap-icon://flight"
         }
       }
     }
