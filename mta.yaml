@@ -102,6 +102,20 @@ modules:
     type: com.sap.application.content
     build-parameters:
       no-source: true
+      build-result: resources
+      requires:
+        - name: sflight-app-resources
+          artifacts:
+            - resources.zip
+          target-path: resources/
+        - name: sflight-app-travel_analytics
+          artifacts:
+            - travel_analytics.zip
+          target-path: resources/
+        - name: sflight-app-travel_processor
+          artifacts:
+            - travel_processor.zip
+          target-path: resources/
     requires:
       - name: sflight-uaa
         parameters:
@@ -128,6 +142,7 @@ modules:
               ServiceInstanceName: sflight-uaa
               ServiceKeyName: sflight-uaa-key
               sap.cloud.service: sap.fe.cap.sflight
+    path: app/
 
 resources:
   # ------------------------------------------------------------
